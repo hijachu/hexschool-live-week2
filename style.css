@@ -336,20 +336,18 @@ body {
     margin-bottom: 48px;
 }
 
-.brand-images {
+.my-brand img {
+    display: block;
+
+    margin-left: 12px;
+    margin-right: 12px;
+
+    margin-bottom: 40px;
+}
+
+.brand-images-2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
 
     /* 160 - 40 = 120 */
     margin-bottom: 120px;
-}
-
-.brand-images img {
-    display: block;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 40px;
 }
