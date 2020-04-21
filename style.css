@@ -134,21 +134,30 @@ table {
     border-spacing: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/****************************/
+
 body {
-    font-family:  Roboto, "微軟正黑體", sans-serif
+    font-family: 'Roboto', "微軟正黑體", sans-serif;
 }
 
 .container {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
 }
 
 /****************************
-* header
+* HEADER
 ****************************/
 .header {
     height: 960px;
     background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
     color: #fff;
     font-style: italic;
 
@@ -190,6 +199,108 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .social-icon img {
     display: block;
 }
+
+/****************************
+* ABOUT
+****************************/
+.about {
+    font-style: italic;
+    font-size: 24px;
+
+    /* in XD design, it's bold */
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about h2 {
+    /* medium */
+    font-weight: 500;
+
+    font-size: 64px;
+    line-height: 75px;
+
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+
+.about img {
+    display: block;
+    width: 384px;
+    height: 384px;
+}
+
+.full-name {
+    line-height: 28px;
+
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.birth-date {
+    line-height: 28px;
+
+    margin-bottom: 8px;
+}
+
+.education {
+    width: 411px;
+    line-height: 32px;
+
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.about hr {
+    width: 384px;
+    border-top: 1px solid #000;
+
+    margin-bottom: 34px;
+}
+
+.about ul {
+    width: 342px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 56px;
+}
+
+.about ul li {
+    line-height: 50px;
+    height: 50px;
+
+    margin-left: 30px;
+}
+
+.about ul li::before {
+    position: absolute;
+
+    content: '';
+
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #891818;
+
+    /* -22 - 16 = -38 */
+    margin-left: -38px;
+    /* vertical center (50 - 22) / 2 = 14 */
+    margin-top: 14px;
+
+    z-index: 1;
+}
+
+
