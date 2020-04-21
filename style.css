@@ -147,35 +147,35 @@ body {
     width: 100%;
     margin: 0 auto;
 
-    /* medium */
+    /* in XD design, it's medium */
     font-weight: 400;
 }
 
-/****************************
-* HEADER
-****************************/
+.flex-col-aic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
+    font-size: 64px;
+    line-height: 75px;
+
+    margin-top: 64px;
+}
+/****************************
+* BANNER
+****************************/
+.banner {
     height: 960px;
     background-image: url('images/banner.png');
     background-repeat: no-repeat;
     background-position: center center;
 
-    display: flex;
-    justify-content: center;
-
-    border: 1px solid #707070;
-}
-
-.header-content {
-    width: 308px;
-
     color: #fff;
     font-style: italic;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    border: 1px solid #707070;
 }
 
 .name-header {
@@ -183,16 +183,16 @@ body {
     margin-bottom: 32px;
 }
 
-.name-header .heres {
+.name-header .name-prefix {
     line-height: 28px;
     font-size: 24px;
 }
 
 .name-header .name {
+    /* bold */
     font-weight: 600;
 
     line-height: 94px;
-    height: 94px;
     font-size: 80px;
 }
 
@@ -200,8 +200,10 @@ body {
     line-height: 35px;
     height: 70px;
     font-size: 24px;
+
     width: 283px;
 
+    /* bold */
     font-weight: 600;
 
     margin-bottom: 64px;
@@ -227,21 +229,9 @@ body {
 
     /* in XD design, it's bold */
     font-weight: 600;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
-.about h2 {
-    /* medium */
-    font-weight: 500;
-
-    font-size: 64px;
-    line-height: 75px;
-
-    margin-top: 64px;
+.about .header {
     margin-bottom: 40px;
 }
 
@@ -282,6 +272,7 @@ body {
 
 .about ul {
     /* width: 342px; */
+    height: 148px;
 
     display: flex;
     flex-direction: column;
@@ -294,7 +285,6 @@ body {
 
 .about ul li {
     line-height: 50px;
-    height: 50px;
 
     margin-left: 30px;
 }
@@ -322,4 +312,6 @@ body {
 * MY-BRAND
 ****************************/
 
-.my
+.my-brand {
+
+}
