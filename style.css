@@ -140,7 +140,7 @@ table {
 }
 
 body {
-    font-family: 'Roboto', "微軟正黑體", sans-serif;
+    font-family: 'Roboto', '微軟正黑體', 'sans-serif';
 }
 
 .container {
@@ -281,7 +281,7 @@ body {
 }
 
 .about ul {
-    width: 342px;
+    /* width: 342px; */
 
     display: flex;
     flex-direction: column;
