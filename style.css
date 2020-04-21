@@ -158,11 +158,14 @@ body {
 }
 
 .header {
+    font-style: italic;
+
     font-size: 64px;
     line-height: 75px;
 
     margin-top: 64px;
 }
+
 /****************************
 * BANNER
 ****************************/
@@ -311,7 +314,44 @@ body {
 /****************************
 * MY-BRAND
 ****************************/
-
 .my-brand {
+    background: #000;
+    color: #fff;
+}
 
+.my-brand .slogan {
+    font-style: italic;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.my-brand p {
+    font-size: 20px;
+    line-height: 38px;
+    height: 112px;
+
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.brand-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+    /* 160 - 40 = 120 */
+    margin-bottom: 120px;
+}
+
+.brand-images img {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 40px;
 }
