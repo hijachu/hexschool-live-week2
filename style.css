@@ -134,11 +134,10 @@ table {
     border-spacing: 0;
 }
 
+/****************************/
 * {
     box-sizing: border-box;
 }
-
-/****************************/
 
 body {
     font-family: 'Roboto', "微軟正黑體", sans-serif;
@@ -147,6 +146,9 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
+
+    /* medium */
+    font-weight: 400;
 }
 
 /****************************
@@ -158,9 +160,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 
-    color: #fff;
-    font-style: italic;
-
     display: flex;
     justify-content: center;
 
@@ -169,6 +168,14 @@ body {
 
 .header-content {
     width: 308px;
+
+    color: #fff;
+    font-style: italic;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .name-header {
@@ -179,24 +186,31 @@ body {
 .name-header .heres {
     line-height: 28px;
     font-size: 24px;
-    font-weight: bold;
 }
 
 .name-header .name {
+    font-weight: 600;
+
     line-height: 94px;
+    height: 94px;
     font-size: 80px;
 }
 
 .job-title {
     line-height: 35px;
+    height: 70px;
     font-size: 24px;
-    font-weight: bold;
+    width: 283px;
+
+    font-weight: 600;
 
     margin-bottom: 64px;
 }
 
 .social-icon {
+    width: 308px;
     display: flex;
+
     justify-content: space-between;
 }
 
@@ -290,6 +304,7 @@ body {
 
     content: '';
 
+    /* brown circle bullet */
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -303,4 +318,8 @@ body {
     z-index: 1;
 }
 
+/****************************
+* MY-BRAND
+****************************/
 
+.my
