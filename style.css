@@ -143,6 +143,7 @@ body {
     font-family: 'Roboto', '微軟正黑體', 'sans-serif';
 }
 
+/* horizontal center */
 .container {
     width: 100%;
     margin: 0 auto;
@@ -159,13 +160,22 @@ body {
 
 .header {
     font-style: italic;
-
     font-size: 64px;
+    /* bold */
+    font-weight: 600;
+
     line-height: 75px;
 
     margin-top: 64px;
 }
 
+.p-fz20 {
+    font-size: 20px;
+}
+
+.color-white {
+    color: white;
+}
 /****************************
 * BANNER
 ****************************/
@@ -350,4 +360,79 @@ body {
 
     /* 160 - 40 = 120 */
     margin-bottom: 120px;
+}
+
+/****************************
+* OTHER-WORKS
+****************************/
+.other-works {
+    /* 1558 + 362 */
+    height: 1920px;
+    background-image: url('images/photo-1561291386-5be50364cfb5.png');
+    background-repeat: no-repeat;
+    /* 361 - 281 = 80 */
+    background-position: center 361px;
+}
+
+.work-subtitle {
+    font-weight: 600;
+
+    line-height: 35px;
+    height: 70px;
+
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.work-list {
+    width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    /* 160 - 56 */
+    margin-bottom: 104px;
+}
+
+.work-item {
+    margin-bottom: 56px;
+}
+
+.work-item img {
+    display: block;
+}
+
+.work-item p {
+    text-align: center;
+    line-height: 28px;
+    height: 28px;
+
+    margin-top: 18px;
+}
+
+/****************************
+* CONTACT
+****************************/
+.contact {
+    background: #000;
+    text-align: center;
+    padding-top: 64px;
+
+    /* 80 - 16 = 64 */
+    padding-bottom: 64px;
+}
+
+.contact .header {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.contact p {
+    font-size: 24px;
+    line-height: 33px;
+    height: 33px;
+
+    margin-bottom: 16px;
 }
