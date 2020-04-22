@@ -176,6 +176,7 @@ body {
 .color-white {
     color: white;
 }
+
 /****************************
 * BANNER
 ****************************/
@@ -431,6 +432,8 @@ body {
 
 .contact p {
     font-size: 24px;
+    font-style: italic;
+
     line-height: 33px;
     height: 33px;
 
